@@ -6,6 +6,6 @@ public class excersise2
 		int y = 6;
 		int FiveTimesSix = x * y;
 		
-		System.out.println("Five times six is" + FiveTimesSix);
+		System.out.println("Five times six is " + FiveTimesSix);
 	}
 }

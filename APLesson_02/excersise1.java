@@ -8,10 +8,6 @@ public class excersise1
 
 		System.out.println("The area of your rectangle is " + recArea);		
 	
-		int x = 5;
-		int y = 6;
-		intFiveTimesSix = x * y;
-		
-		System.out.println("Five times six is" + FiveTimesSix);
 	}
 }
+
