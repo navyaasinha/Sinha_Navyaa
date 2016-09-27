@@ -24,7 +24,7 @@ public class excercise_1
 		System.out.println("You have such bad music taste." + music + "is the worst.");
 		
 		System.out.println("How many siblings do you have?");
-		num = keyboard.nextInt();
+		c
 		System.out.println("I feel bad for those" + num + "siblings");
 		
 		System.out.println("What do you want to be when you grow up?");

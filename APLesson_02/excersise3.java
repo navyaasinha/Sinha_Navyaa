@@ -9,6 +9,8 @@ public class excersise3
 		String zipCode = "92130";
 		
 		
-		System.out.println(firstName + lastName + address + city + zipCode);
+		System.out.println(firstName + lastName );
+		System.out.println(address);
+		System.out.println(city + zipCode);
 	}
 }
