@@ -28,5 +28,6 @@ public class excercise_502
 		
 		System.out.println("<<<<<<<<Reciept>>>>>>>>>>>");
 		
+		
 	}
 }
