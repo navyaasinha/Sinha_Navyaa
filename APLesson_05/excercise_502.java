@@ -21,13 +21,29 @@ public class excercise_502
 		System.out.println("Please enter the price:");
 		double price4 = kb.nextDouble();
 		
-		double subtotal = price1 + price2 + price3 + price 4;
+		double subtotal = price1 + price2 + price3 + price4;
 		double discount = calcDisc(subtotal);
 		double tax = subtotal * 0.08;
 		double total - discount + tax;
 		
 		System.out.println("<<<<<<<<Reciept>>>>>>>>>>>");
+		format(item1, price1);
+		format("Subtotal:", subtotal);
+		System.out.println("Thank you");
 		
 		
 	}
+	
+	public static double calcDisc(double sub)
+	{
+		if (sub>= 2000)
+			return sub * 0.15;
+		return 0.0;
+	}
+	
+	public static void format (String item, double price)
+	{
+		System.out.printf("%10s item + "............" + price);
+	}
+	
 }
