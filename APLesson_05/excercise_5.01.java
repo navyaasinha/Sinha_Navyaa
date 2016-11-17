@@ -1,4 +1,4 @@
-public class excercise_5.01
+public class excercise_501
 {
 	int player;
 	int computer;
