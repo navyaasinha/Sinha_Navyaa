@@ -1,49 +1,81 @@
 import java.util.Scanner;
 public class excercise_502
 {
-	public static void main (String[]args);
+	static double price1;
+	static double price2;
+	static double price3;
+	static double price4;
+	static String item1;
+	static String item2;
+	static String item3;
+	static String item4;
+	static double discount;
+	
+	public static void main(String[]args)
 	{
-		Scanner kb = new Scanner (System.in);
-		System.out.println("Please enter item 1:");
-		String item1 = kb.next();
-		System.out.println("Please enter the price:");
-		double price1 = kb.nextDouble();
-		System.out.println("Please enter item 2:");
-		String item2 = kb.next();
-		System.out.println("Please enter the price:");
-		double price2 = kb.nextDouble();
-		System.out.println("Please enter item 3:");
-		String item3 = kb.next();
-		System.out.println("Please enter the price:");
-		double price3 = kb.nextDouble();
-		System.out.println("Please enter item 4:");
-		String item4 = kb.next();
-		System.out.println("Please enter the price:");
-		double price4 = kb.nextDouble();
+		Scanner keyboard = new Scanner(System.in);
 		
-		double subtotal = price1 + price2 + price3 + price4;
-		double discount = calcDisc(subtotal);
-		double tax = subtotal * 0.08;
-		double total - discount + tax;
+		System.out.println("Enter item 1.");
+		 item1 = keyboard.nextLine();
 		
-		System.out.println("<<<<<<<<Reciept>>>>>>>>>>>");
+		System.out.println("Enter item 1 price.");
+		 price1 = keyboard.nextDouble();
+		
+		keyboard.nextLine();
+		System.out.println("Enter item 2.");
+		 item2 = keyboard.nextLine();
+		
+		System.out.println("Enter item 2 price.");
+		 price2 = keyboard.nextDouble();
+		
+		keyboard.nextLine();
+		System.out.println("Enter item 3.");
+		 item3 = keyboard.nextLine();
+		
+		System.out.println("Enter item 3 price.");
+		 price3 = keyboard.nextDouble();
+		
+		keyboard.nextLine();
+		System.out.println("Enter item 4.");
+		 item4 = keyboard.nextLine();
+		
+		System.out.println("Enter item 4 price.");
+		 price4 = keyboard.nextDouble();
+		
+		double subtotal = (price1 + price2 + price3 +price4);
+		discount();
+		double tax = (subtotal - discount)*0.08;
+		double total = (subtotal - discount) + tax;
+		
+		System.out.println("<<<<<<<<<<<<<<Reciept>>>>>>>>>>>>>>>");
+		
 		format(item1, price1);
+		format(item2, price2);
+		format(item3, price3);
+		format(item4, price4);
+		
 		format("Subtotal:", subtotal);
-		System.out.println("Thank you");
+		format("Discount:", discount);
+		format("Tax:", tax);
+		format("Total:", total);
 		
-		
+		System.out.println("\n____________________________________");
+		System.out.println("thanks for shopping with us!");
 	}
-	
-	public static double calcDisc(double sub)
+	public static double discount()
 	{
-		if (sub>= 2000)
-			return sub * 0.15;
-		return 0.0;
+		if ((price1 + price2 + price3 +price4) >= 2000)
+		{
+			discount = (price1 + price2 + price3 +price4)*0.15;
+		}
+		if ((price1 + price2 + price3 +price4) < 2000)
+		{
+			discount = 0;
+		}
+		return discount;
 	}
-	
-	public static void format (String item, double price)
+	public static void format(String item, double price)
 	{
-		System.out.printf("%10s item + "............" + price);
+		System.out.printf("\n%15s ....... %10.2f", item, price);
 	}
-	
 }
