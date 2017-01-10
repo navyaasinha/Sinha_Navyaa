@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=excercise_12_2()
+comment1.params=uName\ fName\ lName
+comment1.target=excercise_12_2(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=uName
+comment2.target=void\ setUserName(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getUserName()
+comment4.params=
+comment4.target=java.lang.String\ getFirstName()
+comment5.params=
+comment5.target=java.lang.String\ getLastName()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

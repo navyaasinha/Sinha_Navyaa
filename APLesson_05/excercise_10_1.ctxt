@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=n
+comment1.target=java.lang.Integer\ gFactor(int)
+comment2.params=
+comment2.target=void\ removeComposites()
+numComments=3
