@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Human()
+comment1.params=h\ e\ s
+comment1.target=Human(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=h\ e\ s
+comment2.target=void\ setHES(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getHair()
+comment4.params=
+comment4.target=java.lang.String\ getEyes()
+comment5.params=
+comment5.target=java.lang.String\ getSkin()
+numComments=6

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Car()
+comment1.params=p\ i\ e\ t
+comment1.target=Car(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=p\ i\ e\ t
+comment2.target=void\ setCustom(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getPaint()
+comment4.params=
+comment4.target=java.lang.String\ getInterior()
+comment5.params=
+comment5.target=java.lang.String\ getEngine()
+comment6.params=
+comment6.target=java.lang.String\ getTires()
+numComments=7
