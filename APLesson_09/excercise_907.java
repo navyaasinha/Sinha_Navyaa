@@ -34,7 +34,7 @@ public class excercise_907
 		String zs = "";
 		for(String wd : wds)
 		{
-			if (wd.indexOf("z")> 0)
+			if (wd.indexOf("z")>= 0)
 			{
 				zs += wd + " ";
 			}
