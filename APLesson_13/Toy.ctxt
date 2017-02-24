@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Toy()
+comment1.params=n
+comment1.target=Toy(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getType()
+comment3.params=n
+comment3.target=void\ setName(java.lang.String)
+comment4.params=c
+comment4.target=void\ setCount(int)
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment6.params=
+comment6.target=int\ getCount()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

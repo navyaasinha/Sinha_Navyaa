@@ -1,4 +1,4 @@
-public abstract class Money 
+public abstract class Money
 {
 	private String name;
 	private double value;
