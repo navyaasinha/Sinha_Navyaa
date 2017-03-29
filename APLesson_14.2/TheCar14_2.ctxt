@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TheCar14_2()
+comment1.params=
+comment1.target=int\ getID()
+comment2.params=
+comment2.target=double[]\ getLoc()
+comment3.params=a\ b
+comment3.target=void\ move(double,\ double)
+numComments=4
