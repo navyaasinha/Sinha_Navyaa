@@ -15,7 +15,7 @@ public class Magpie2
 		}
 		else if (statement.equals(""))
 		{
-			response = "Say something fam";
+			response = "Say something please";
 		}
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
