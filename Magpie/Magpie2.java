@@ -15,7 +15,11 @@ public class Magpie2
 		}
 		else if (statement.equals(""))
 		{
+<<<<<<< HEAD
 			response = "Say something";
+=======
+			response = "Say something please";
+>>>>>>> origin/master
 		}
 		else if (statement.findKeyword("mother") >= 0
 				|| statement.findKeyword("father") >= 0
