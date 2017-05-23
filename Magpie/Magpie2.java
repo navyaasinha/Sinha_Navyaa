@@ -9,32 +9,32 @@ public class Magpie2
 	{
 		String response = "";
 		
-		if (statement.indexOf("no") >= 0)
+		if (statement.findKeyword("no") >= 0)
 		{
 			response = "Why so negative?";
 		}
 		else if (statement.equals(""))
 		{
-			response = "Say something fam";
+			response = "Say something";
 		}
-		else if (statement.indexOf("mother") >= 0
-				|| statement.indexOf("father") >= 0
-				|| statement.indexOf("sister") >= 0
-				|| statement.indexOf("brother") >= 0)
+		else if (statement.findKeyword("mother") >= 0
+				|| statement.findKeyword("father") >= 0
+				|| statement.findKeyword("sister") >= 0
+				|| statement.findKeyword("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
 		}
-		else if (statement.indexOf("cat") >= 0
-			|| statement.indexOf("dog") >= 0
-			|| statement.indexOf("fish") >= 0
-			|| statement.indexOf("turtle") >= 0)
+		else if (statement.findKeyword("cat") >= 0
+			|| statement.findKeyword("dog") >= 0
+			|| statement.findKeyword("fish") >= 0
+			|| statement.findKeyword("turtle") >= 0)
 		{
 			
-			response = "Tell me more about your pet";
+			response = "Tell me about your pet";
 		}
-		else if (statement.indexOf("Robinette") >= 0)
+		else if (statement.findKeyword("Robinette") >= 0)
 		{
-			response = "He sounds like a pretty dank teacher";
+			response = "He sounds like a good teacher";
 		}
 		else if (findKeyword(statement, "I want to", 0) >= 0)
 		{
