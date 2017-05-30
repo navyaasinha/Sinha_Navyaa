@@ -247,8 +247,7 @@ public class Magpie_P2
 				return psn;
 			}
 
-			// The last position didn't work, so let's find
-			// the next, if there is one.
+			
 			psn = phrase.indexOf(goal, psn + 1);
 
 		}
