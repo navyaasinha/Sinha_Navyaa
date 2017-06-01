@@ -468,7 +468,7 @@ public class SimplePicture implements DigitalPicture
      if (!file.canRead())
      {
        throw new IOException(this.fileName +
-                             " Could not be opened. Check that you specified the path");
+                             " could not be opened. Check that you specified the path");
      }
    }
    
@@ -641,7 +641,7 @@ public class SimplePicture implements DigitalPicture
    // check that you can write to the directory 
    if (!fileLoc.canWrite()) {
         throw new IOException(fileName +
-        " Could not be opened. Check to see if you can write to the directory.");
+        " could not be opened. Check to see if you can write to the directory.");
    }
    
    // get the extension
@@ -666,7 +666,7 @@ public class SimplePicture implements DigitalPicture
          this.writeOrFail(fileName);
          return true;
      } catch (Exception ex) {
-         System.out.println("there was an error trying to write " + fileName);
+         System.out.println("There was an error " + fileName);
          ex.printStackTrace();
          return false;
      }
@@ -750,4 +750,4 @@ public class SimplePicture implements DigitalPicture
    return output;
  }
 
-} // end of SimplePicture class
+}
