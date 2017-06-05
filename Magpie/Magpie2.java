@@ -125,18 +125,24 @@ public class Magpie2
 =======
 		else
 		{
-		// Look for a two word (you <something> me)
-		// pattern
-		int psn = findKeyword(statement, "you", 0);
+			// Look for a two word (you <something> me)
+			// pattern
+			int psn = findKeyword(statement, "you", 0);
 
 			if (psn >= 0 && findKeyword(statement, "me", psn) >= 0)
-				{
-					response = transformYouMeStatement(statement);
-				}
+			{
+				response = transformYouMeStatement(statement);
+			}
 			else
+			{
+				psn = findKeyword(statement, "I", 0);
+				if(psn >=0 && findKeyword(statement, "you", psn) >=0)
 				{
-					response = getRandomResponse();
+					response = transformIYouStatement(statement);
 				}
+				else
+					response = getRandomResponse();
+			}
 		}
 		return response;
 	}
@@ -227,24 +233,23 @@ public class Magpie2
 	   * */
 	}
 	
-	private String transformYouMeStatement(String statement)
+	private String transformIYouStatement(String statement)
 	{
-			statement.trim();
-		int stLength = statement.length();
-		String lastChar = statement.substring(stLength - 1, stLength);
+		statement = statement.trim();
+		Character lastCha = statement.charAt(statement.length() - 1);
+		String lastChar = lastCha.toString();
 		
 		if (lastChar.equals("."))
 		{
-			statement = statement.substring(0, stLength - 1);
+			statement = statement.substring(0, statement.length() - 1);
 		}
 		
-		int psnOfYou = findKeyword(statement, "I");
-		int psnOfMe = findKeyword(statement, "you", psnOfYou + 3);
-		//add 3 to ensure that occurance of "you" is after "me"
-		String restOfStatement = statement.substring(psnOfYou + 3, psnOfMe);
+		int psnofI = findKeyword(statement, "I");
+		int psnofYou = findKeyword(statement, "you", psnofI);
 		
-		return "What makes you think that I" + restOfStatement + "me?"; 
+		String restofStatement = statement.substring(psnofI + 1, psnofYou);
 		
+		return "What makes you think that I" + restofStatement + "you?";
 	}
 	
 >>>>>>> origin/master
